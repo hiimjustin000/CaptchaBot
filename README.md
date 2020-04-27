@@ -4,7 +4,7 @@ A Discord Captcha bot for servers.
 Commands:
 
 Command | Description | Usage
-------------------------------
+--------|-------------|-------
 help | Shows the help menu. | help
 prefix | Change the current prefix. | prefix (desired prefix)
 verified-role | Sets the verified role. | Usage: verified-role (role id)
