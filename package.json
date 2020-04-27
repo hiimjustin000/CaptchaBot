@@ -1,14 +1,18 @@
 {
-  "name": "CaptchaBot",
+  "name": "captchabot",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Discord Captcha bot for servers.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ."
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "github",
+    "url": "github.com/hiimjustin000/CaptchaBot"
+  },
   "dependencies": {
     "@types/node": "^13.11.0",
     "canvas": "^2.6.1",
