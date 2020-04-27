@@ -1,0 +1,20 @@
+{
+  "name": "CaptchaBot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^13.11.0",
+    "canvas": "^2.6.1",
+    "discord.js": "^12.1.1",
+    "dotenv": "^8.2.0",
+    "lodash": "^4.17.15",
+    "quick.db": "^7.0.0-b22"
+  }
+}
