@@ -2,11 +2,15 @@ module.exports = async (client, message, args) => {
     message.channel.send({ embed: {
         title: "CaptchaBot Help",
         description: "The help menu for CaptchaBot.",
-        color: 0x00FF00,
+        color: 0x0000FF,
         fields: [
             {
                 name: "help",
                 value: "Shows this menu.\nUsage: help",
+            },
+            {
+                name: "ping",
+                value: "Shows the bot ping.\nUsage: ping"
             },
             {
                 name: "prefix",
