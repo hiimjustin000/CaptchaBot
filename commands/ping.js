@@ -1,5 +1,17 @@
 module.exports = async (client, message, args) => {
     message.channel.send("Pinging...").then(msg => {
-        msg.edit(`Pong!\n\nBot: ${Math.floor(msg.createdTimestamp - message.createdTimestamp)}ms\nAPI: ${Math.round(client.ws.ping)}ms`)
-    })
+        msg.edit("Pong!", { embed: {
+            color: 0x0000FF,
+            fields: [
+                {
+                    name: "Latency",
+                    value: `${Math.round(client.ws.ping)}ms`
+                },
+                {
+                    name: "API Latency",
+                    value: `${Math.floor(msg.createdTimestamp - message.createdTimestamp)}ms`
+                }
+            ]
+        } });
+    });
 }

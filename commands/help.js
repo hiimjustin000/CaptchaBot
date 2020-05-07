@@ -28,5 +28,5 @@ module.exports = async (client, message, args) => {
         footer: {
             text: "CaptchaBot by hiimjustin000",
         },
-    }});
+    } });
 }
