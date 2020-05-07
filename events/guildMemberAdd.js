@@ -22,7 +22,7 @@ module.exports = async (client, member) => {
         collector.on("end", async (collected) => {
             if (collected.size == 0) {
                 member.kick("Not solving the captcha in time");
-                member.send(`You have not solved the captcha in time, so you were kicked from ${member.guild.name}`);
+                member.send(`You have not solved the captcha in time, so you were kicked from **${member.guild.name}**`);
             }
         });
     });
