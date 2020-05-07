@@ -11,7 +11,10 @@ module.exports = async (client, message, args) => {
                     name: "API Latency",
                     value: `${Math.floor(msg.createdTimestamp - message.createdTimestamp)}ms`
                 }
-            ]
+            ],
+            footer: {
+                text: "CaptchaBot by hiimjustin000"
+            }
         } });
     });
 }
