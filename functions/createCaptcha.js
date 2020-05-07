@@ -6,7 +6,7 @@ const _ = require("lodash");
 function createCaptcha(width = 150, height = 50, length = 5) {
     let canvas = Canvas.createCanvas(width, height, length);
 
-    let chars = "123456789abcdefghjknpqrstuvxyzABCDEFGHJKLNPQRSTUVXYZ";
+    let chars = "0123456789abcdefghjknpqrstuvxyzABCDEFGHJKLNPQRSTUVXYZ";
     let x = 0;
     let y = 0;
     let captcha = "";
