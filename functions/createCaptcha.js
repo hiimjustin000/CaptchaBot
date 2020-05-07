@@ -1,6 +1,10 @@
+const Canvas = require("canvas");
+const path = require("path");
+Canvas.registerFont(path.resolve(__dirname, "fonts", "Impact.ttf"), { family: "Impact" });
+const _ = require("lodash");
+
 function createCaptcha(width = 150, height = 50, length = 5) {
-    const canvas = require("canvas").createCanvas(width, height, length);
-    const _ = require("lodash");
+    let canvas = Canvas.createCanvas(width, height, length);
 
     let chars = "123456789abcdefghjknpqrstuvxyzABCDEFGHJKLNPQRSTUVXYZ";
     let x = 0;
