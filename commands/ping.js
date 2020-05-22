@@ -5,11 +5,11 @@ module.exports = async (client, message, args) => {
             fields: [
                 {
                     name: "Latency",
-                    value: `${Math.round(client.ws.ping)}ms`
+                    value: `${Math.floor(msg.createdTimestamp - message.createdTimestamp)}ms`
                 },
                 {
                     name: "API Latency",
-                    value: `${Math.floor(msg.createdTimestamp - message.createdTimestamp)}ms`
+                    value: `${Math.round(client.ws.ping)}ms`
                 }
             ],
             footer: {
