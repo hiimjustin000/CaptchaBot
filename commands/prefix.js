@@ -6,5 +6,5 @@ module.exports = async (client, message, args) => {
 
     db.set(`prefix_${message.guild.id}`, args[0]);
 
-    message.channel.send(`Prefix set to ${args[0]}`);
+    message.channel.send(`Prefix set to \`${args[0]}\``);
 }
